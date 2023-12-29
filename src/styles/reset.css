@@ -70,8 +70,7 @@ textarea, select {
 
 /* custom */
 
-button { 
-    cursor: pointer; 
-    background: none;
-    border: none;
+a {
+    display: inline-block;
+    text-decoration: none;
 }

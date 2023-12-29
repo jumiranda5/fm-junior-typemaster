@@ -10,7 +10,42 @@
     font-weight: 900;
 }
 
+:root {
+    --clr-primary: #7B8BAD;
+    --clr-primary-dark: #162542;
+    --clr-secondary: #E8EFF2;
+    --clr-accent: #F16718;
+    --clr-accent-light: #FF9B62;
+    --clr-white: #FFFFFF;
+}
+
 body { 
     font-family: 'Barlow';
     font-weight: 500; 
+    color: var(--clr-primary);
+    line-height: 1.625;
+}
+
+h1, h2, h3 { 
+    color: var(--clr-primary-dark);
+    font-weight: 900; 
+}
+
+h1 { 
+    font-size: 3rem;
+    line-height: 1; 
+}
+
+h2 { 
+    font-size: 2rem;
+    line-height: 1.125;
+}
+
+h3 { 
+    font-size: 1.5rem;
+    line-height: 1.166;
+}
+
+@media (min-width: 64em) {
+    h1 { font-size: 3.5rem; }
 }
