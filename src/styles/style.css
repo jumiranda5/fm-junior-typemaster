@@ -6,6 +6,12 @@
 
 @font-face {
     font-family: 'Barlow';
+    src: url('../assets/fonts/Barlow-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Barlow';
     src: url('../assets/fonts/Barlow-Black.ttf');
     font-weight: 900;
 }
@@ -46,6 +52,92 @@ h3 {
     line-height: 1.166;
 }
 
+.pre-order-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--clr-accent);
+    color: var(--clr-white);
+    line-height: 3rem;
+    padding: 0 .75rem;
+    border-radius: .5rem;
+    transition: background-color .3s;
+}
+
+.pre-order-link:hover {
+    background-color: var(--clr-accent-light);
+}
+
+@media (min-width: 48em) {
+    .pre-order-link {
+        line-height: 3.625rem;
+        padding: 0 1.5rem;
+    }
+}
+
 @media (min-width: 64em) {
     h1 { font-size: 3.5rem; }
+}
+
+/* ==============================================
+    MAIN GRID
+=============================================== */
+
+/*
+    main grid with 2 cols on mobile and tablet / 4 cols on desktop
+    + empty cols on the start and end borders to position the images 
+      and patterns on the product section
+*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 0fr repeat(2, 1fr) 0fr;
+    gap: 1.5rem;
+}
+
+.grid-col-all {
+    grid-column: 2 / 4;    
+}
+
+@media (min-width: 48em) {
+    .grid {
+        grid-template-columns: 1rem repeat(2, 1fr) 1rem;
+        gap: 1.875rem;
+    }   
+}
+
+@media (min-width: 64em) {
+    .grid {
+        grid-template-columns: 1rem 1fr repeat(4, 2fr) 1fr 1rem;
+    }   
+
+    .grid-col-all {
+        grid-column: 3 / 7;    
+    }
+}
+
+/* ==============================================
+    HEADER
+=============================================== */
+
+header {
+    border: 1px solid red;
+}
+
+.header-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.header-wrapper .pre-order-link {
+    color: var(--clr-primary-dark);
+    background-color: var(--clr-secondary);
+    transition: all .3s;
+}
+
+.pre-order-link:hover {
+    color: var(--clr-white);
+    background-color: var(--clr-primary-dark);
 }
