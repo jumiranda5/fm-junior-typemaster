@@ -6,16 +6,20 @@
     <title>Frontend Mentor | Typemaster pre-launch landing page</title>
 </head>
 <body>
-    <header class="grid">
-        <div class="header-wrapper grid-col-all">
+
+    <header class="page-grid">
+        <div class="header-wrapper grid page-grid-col-all">
             <img id="logo" src="" alt="Typemaster logo">
             <a href="#" class="pre-order-link">Pre-order now</a>
         </div>
     </header>
 
     <main>
-        <section class="section-product grid">
-            <div class="product">
+        <section class="section-product page-grid">
+
+            <div class="section-pattern-start"></div>
+
+            <div class="product grid">
                 <h1 class="product-title">Typemaster keyboard</h1>
   
                 <p class="product-text">
@@ -23,39 +27,45 @@
                     mechanical typing experience.
                 </p>
               
-                <a href="" class="pre-order-link">Pre-order now</a>
-                <p class="product-release">Release on 5/27</p>
+                <div class="product-order-container grid">
+                    <a href="" class="pre-order-link">Pre-order now</a>
+                    <p class="product-release">Release on 5/27</p>
+                </div>
             </div>
 
             <picture class="keyboard-img">
-                <source id="keyboard-img-desktop" media="(min-width: 1024px)" srcset="">
+                <source id="keyboard-img-desktop" media="(min-width: 1200px)" srcset="">
                 <source id="keyboard-img-tablet" media="(min-width: 768px)" srcset="">
                 <img id="keyboard-img-mobile" src="" alt="">
             </picture>
 
             <picture class="keyboard-img-phone">
-                <source id="keyboard-img-phone-desktop" media="(min-width: 1024px)" srcset="">
+                <source id="keyboard-img-phone-desktop" media="(min-width: 1200px)" srcset="">
                 <source id="keyboard-img-phone-tablet" media="(min-width: 768px)" srcset="">
                 <img id="keyboard-img-phone-mobile" src="" alt="">
             </picture>
 
             <picture class="keyboard-img-glass">
-                <source id="keyboard-img-glass-desktop" media="(min-width: 1024px)" srcset="">
+                <source id="keyboard-img-glass-desktop" media="(min-width: 1200px)" srcset="">
                 <source id="keyboard-img-glass-tablet" media="(min-width: 768px)" srcset="">
                 <img id="keyboard-img-glass-mobile" src="" alt="">
             </picture>
             
-            <div class="product-description">
+            <div class="product-description grid">
                 <h2 class="product-description-title">Mechanical wireless keyboard</h2>
                 <p class="product-description-text">
                     The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety
                     of switches and keycaps, along with reliable wireless connectivity.
                 </p>
             </div>
+
+            <div class="section-pattern-end"></div>
+
         </section>
 
-        <section class="features grid">
-            <div class="feature">
+        <section class="features page-grid">
+
+            <div class="feature grid page-grid-col-1">
                 <img id="icon-compatible" src="" alt="" class="feature-icon">
                 <h3 class="feature-title">Highly compatible</h3>
                 <p class="feature-text">
@@ -63,7 +73,7 @@
                     Plug & play, no installation or driver needed.
                 </p>
             </div>
-            <div class="feature">
+            <div class="feature grid page-grid-col-2">
                 <img id="icon-bluetooth" src="" alt="" class="feature-icon">
                 <h3 class="feature-title">Wireless with bluetooth</h3>
                 <p class="feature-text">
@@ -71,7 +81,7 @@
                     Simply plug the unifying receiver into your computer.
                 </p>
             </div>
-            <div class="feature">
+            <div class="feature grid page-grid-col-3">
                 <img id="icon-battery" src="" alt="" class="feature-icon">
                 <h3 class="feature-title">High capacity battery</h3>
                 <p class="feature-text">
@@ -79,7 +89,7 @@
                     Enjoy 40 hours of usage time between charges.
                 </p>
             </div>
-            <div class="feature">
+            <div class="feature grid page-grid-col-4">
                 <img id="icon-light" src="" alt="" class="feature-icon">
                 <h3 class="feature-title">RGB backlit modes</h3>
                 <p class="feature-text">
@@ -87,6 +97,7 @@
                     you type in low light conditions.
                 </p>
             </div>
+
         </section>
     </main>
 
