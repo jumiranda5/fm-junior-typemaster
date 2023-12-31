@@ -445,7 +445,7 @@ header {
 }
 
 .feature-title {
-    max-width: 14ch;
+    max-width: 13ch;
 }
 
 @media (min-width: 48em) {
@@ -469,7 +469,7 @@ header {
 
 @media (min-width: 48em) {
     .features.page-grid {
-        gap: 1.875;
+        gap: 1.875rem;
     }
 
     .features {
@@ -478,5 +478,29 @@ header {
 
     .feature {
         padding-right: 0;
+    }
+}
+
+
+/* ==============================================
+    FOOTER
+=============================================== */
+
+footer {
+    margin-top: 4rem;
+}
+
+.copyright {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.copyright span {
+    font-weight: 700;
+}
+
+@media (min-width: 48em) {
+    footer {
+        margin-top: 6.75rem;
     }
 }
