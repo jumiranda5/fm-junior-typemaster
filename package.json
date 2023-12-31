@@ -6,10 +6,7 @@
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
     "dev": "webpack --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "Juliana Miranda",
   "license": "ISC",
