@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [todo](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/typemaster-prelaunch-landing-page-EiJn7mU4Mz)
 - Live Site URL: [Github Pages](https://jumiranda5.github.io/fm-junior-typemaster/)
 
 ## Author
